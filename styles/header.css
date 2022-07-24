@@ -1,8 +1,49 @@
 header {
   display: flex;
   justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.logo-search__container {
+  display: flex;
+  gap: 2rem;
 }
 
 .search__container {
+  border: solid transparent 2px;
   display: flex;
+  height: 3rem;
+  width: 25vw;
+  background-color: #f5f5f5;
+  border-radius: 2rem;
+  padding: 0 1rem;
+}
+
+.search-box {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.login__button {
+  width: 12rem;
+  border: solid #2A7AE4 2px;
+  background-color: #fefefe;
+  color: #2A7AE4;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.login__button:hover {
+  background-color: #2A7AE4;
+  color: #fefefe;
 }
