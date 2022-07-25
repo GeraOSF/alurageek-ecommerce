@@ -1,0 +1,33 @@
+.promo {
+  position: relative;
+  padding: 200px 0;
+  background-image: url("../assets/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo__content {
+  position: absolute;
+  color: #fefefe;
+  bottom: 10%;
+  left: 10%;
+}
+
+.promo__text {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+
+.promo__text--details {
+  font-size: 1.375rem;
+}
+
+.promo-button {
+  background-color: #2A7AE4;
+  width: 10rem;
+  height: 3.5rem;
+  color: #fefefe;
+  cursor: pointer;
+  border: none;
+}

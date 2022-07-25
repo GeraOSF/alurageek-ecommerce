@@ -1,5 +1,6 @@
 header {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   padding: 2rem 0;
 }
@@ -36,6 +37,7 @@ header {
 
 .login__button {
   width: 12rem;
+  height: 3.5rem;
   border: solid #2A7AE4 2px;
   background-color: #fefefe;
   color: #2A7AE4;
