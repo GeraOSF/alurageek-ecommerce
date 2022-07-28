@@ -10,6 +10,11 @@ header {
   gap: 2rem;
 }
 
+.logo {
+  width: 176px;
+  height: 60px;
+}
+
 .search__container {
   border: solid transparent 2px;
   display: flex;
@@ -20,6 +25,10 @@ header {
   padding: 0 1rem;
 }
 
+.search__container:focus-within {
+  border-color: var(--color-blue);
+}
+
 .search-box {
   border: none;
   width: 100%;
@@ -27,6 +36,7 @@ header {
   padding: 0.5rem;
   font-size: 1.2rem;
   outline: none;
+  color: var(--color-gray);
 }
 
 .search-button {

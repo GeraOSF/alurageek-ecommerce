@@ -1,0 +1,13 @@
+:root {
+  --color-blue: #2A7AE4;
+  --color-dark-blue: #1a69d1;
+  --color-light-blue: #EAF2FD;
+  --color-white: #FEFEFE;
+  --color-gray: #464646;
+  --color-light-gray: #A2A2A2;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--color-white);
+}

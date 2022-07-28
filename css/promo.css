@@ -31,3 +31,7 @@
   cursor: pointer;
   border: none;
 }
+
+.promo-button:hover {
+  background-color: var(--color-dark-blue);
+}
