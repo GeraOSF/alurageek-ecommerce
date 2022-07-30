@@ -60,12 +60,18 @@ header {
   color: #fefefe;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   .search__container {
     display: none;
   }
 
   .login__button {
-    width: 5rem;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search__container {
+    width: 50vw;
   }
 }

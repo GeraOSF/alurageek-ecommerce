@@ -1,0 +1,13 @@
+.crud__input {
+  min-width: 40vw;
+}
+
+#price {
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+  .crud__input {
+    min-width: 80vw;
+  }
+}

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/59cf79b5cf.js" crossorigin="anonymous"></script>
-  <title>Alura Geek | Log in</title>
+  <title>Alura Geek | Add/Edit Product</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;700&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/contact-us.css">
   <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/crud-product.css">
   <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
@@ -26,22 +27,36 @@
         <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </div>
+    <a href="admin-menu.html"><button class="login__button">Admin menu</button></a>
   </header>
   <main>
     <section class="login">
       <form class="general__form">
-        <legend class="login__form__title">Log in</legend>
+        <legend class="login__form__title">Add product</legend>
         <div class="form__input__container login__input__container">
-          <input type="email" id="login__email" class="form__input--text" required placeholder=" ">
-          <label for="login__email" class="form__input__label">Email</label>
+          <input type="url" id="img-url" class="crud__input form__input--text" required placeholder=" ">
+          <label for="img-url" class="form__input__label">Image URL</label>
         </div>
         <div class="form__input__container login__input__container">
-          <input type="password" id="password" class="form__input--text" required placeholder=" ">
-          <label for="password" class="form__input__label">Password</label>
+          <input type="text" id="category" class="crud__input form__input--text" required placeholder=" ">
+          <label for="category" class="form__input__label">Category</label>
         </div>
-        <input type="submit" class="blue-button form__button--login" value="Log in">
+        <div class="form__input__container login__input__container">
+          <input type="text" id="product-name" class="crud__input form__input--text" required placeholder=" ">
+          <label for="product-name" class="form__input__label">Product name</label>
+        </div>
+        <div class="form__input__container login__input__container">
+          <input type="number" id="price" class="crud__input form__input--text" required placeholder=" ">
+          <label for="price" class="form__input__label">Price</label>
+        </div>
+        <div class="form__input__container login__input__container">
+          <textarea name="description" id="description" class="crud__input form__input--text" rows="10" required placeholder=" "></textarea>
+          <label for="description" class="form__input__label">Description</label>
+        </div>
+        <input type="submit" id="add-edit-product__buton" class="blue-button form__button--login" value="Add">
       </form>
     </section>
+    
     <section class="contact-us">
       <div class="logo-info__container">
         <img class="logo-noshadow" src="../assets/logo-noshadow.png" alt="AluraGeek logo">

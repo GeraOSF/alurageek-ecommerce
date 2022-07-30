@@ -51,11 +51,15 @@
   margin: 0;
 }
 
+.product__name {
+  font-weight: 500;
+}
+
 .product__price {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   .products {
     margin: 0 5vw;
   }
