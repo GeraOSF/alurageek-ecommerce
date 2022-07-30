@@ -1,10 +1,12 @@
 .promo {
   position: relative;
   padding: 200px 0;
+  background-color: var(--color-light-gray);
   background-image: url("../assets/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 4rem;
 }
 
 .promo__content {
@@ -34,4 +36,10 @@
 
 .promo-button:hover {
   background-color: var(--color-dark-blue);
+}
+
+@media only screen and (max-width: 360px) {
+  .promo {
+    background-blend-mode: multiply;
+  }
 }

@@ -2,8 +2,15 @@
   background-color: var(--color-light-blue);
   display: flex;
   justify-content: space-around;
-  padding: 3rem 10rem;
+  gap: 2rem;
+  padding: 4rem 10rem;
   color: var(--color-gray);
+}
+
+.logo-info__container {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
 }
 
 .logo-noshadow {
@@ -13,6 +20,7 @@
 
 .info__links {
   padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
@@ -71,12 +79,11 @@
   user-select: none;
   color: var(--color-light-gray);
   transform-origin: 0 0;
-  transition: transform 0.2s, scale 0.2s;
+  transition: transform 0.2s;
 }
 
 .form__input--text:focus + .form__input__label, .form__input--text:not(:placeholder-shown) + .form__input__label {
-  transform: translateY(-1.15rem);
-  scale: 0.8;
+  transform: translateY(-1rem) scale(0.8);
 }
 
 #message {
@@ -94,4 +101,18 @@
 
 .form__button--send:hover {
   background-color: var(--color-dark-blue);
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-info__container {
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
 }
