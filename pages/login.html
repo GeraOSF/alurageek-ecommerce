@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/59cf79b5cf.js" crossorigin="anonymous"></script>
+  <script src="js/form-validation.js" defer></script>
   <title>Alura Geek | Log in</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,15 +30,21 @@
   </header>
   <main>
     <section class="login">
-      <form class="general__form">
+      <form id="login__form" class="general__form">
         <legend class="login__form__title">Log in</legend>
-        <div class="form__input__container login__input__container">
-          <input type="email" id="login__email" class="form__input--text" required placeholder=" ">
-          <label for="login__email" class="form__input__label">Email</label>
+        <div>
+          <div class="form__input__container login__input__container">
+            <input type="email" id="login__email" class="form__input--text" required placeholder=" " data-type="email">
+            <label for="login__email" class="form__input__label">Email</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
-        <div class="form__input__container login__input__container">
-          <input type="password" id="password" class="form__input--text" required placeholder=" ">
-          <label for="password" class="form__input__label">Password</label>
+        <div>
+          <div class="form__input__container login__input__container">
+            <input type="password" id="password" class="form__input--text" required placeholder=" " data-type="password">
+            <label for="password" class="form__input__label">Password</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
         <input type="submit" class="blue-button form__button--login" value="Log in">
       </form>
@@ -53,15 +60,21 @@
           <il><a class="info__link" href="#">Advertise here</a></il>
         </ul>
       </div>
-      <form class="general__form">
+      <form id="contact-us__form" class="general__form">
         <legend class="contact-us__talk-to-us">Talk to us</legend>
-        <div class="form__input__container">
-          <input type="text" id="name" class="form__input--text" required placeholder=" ">
-          <label class="form__input__label" for="name">Name</label>
+        <div>
+          <div class="form__input__container">
+            <input type="text" id="name" class="form__input--text" required placeholder=" " maxlength="40" data-type="name">
+            <label class="form__input__label" for="name">Name</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
-        <div class="form__input__container">
-          <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" "></textarea>
-          <label class="form__input__label" for="message">Message</label>
+        <div>
+          <div class="form__input__container">
+            <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" " maxlength="300" data-type="message"></textarea>
+            <label class="form__input__label" for="message">Message</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
         <input type="submit" class="blue-button" value="Send message">
       </form>

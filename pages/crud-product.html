@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/59cf79b5cf.js" crossorigin="anonymous"></script>
+  <script src="js/form-validation.js" defer></script>
   <title>Alura Geek | Add/Edit Product</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,31 +28,46 @@
         <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </div>
-    <a href="admin-menu.html"><button class="login__button">Admin menu</button></a>
+    <a href="admin-menu.html"><button class="white-button">Admin menu</button></a>
   </header>
   <main>
     <section class="login">
-      <form class="general__form">
+      <form id="crud-product__form" class="general__form">
         <legend class="login__form__title">Add product</legend>
-        <div class="form__input__container login__input__container">
-          <input type="url" id="img-url" class="crud__input form__input--text" required placeholder=" ">
-          <label for="img-url" class="form__input__label">Image URL</label>
+        <div>
+          <div class="form__input__container login__input__container">
+            <input type="url" id="img-url" class="crud__input form__input--text" required placeholder=" ">
+            <label for="img-url" class="form__input__label">Image URL</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
-        <div class="form__input__container login__input__container">
-          <input type="text" id="category" class="crud__input form__input--text" required placeholder=" ">
-          <label for="category" class="form__input__label">Category</label>
+        <div>
+          <div class="form__input__container login__input__container">
+            <input type="text" id="category" class="crud__input form__input--text" required placeholder=" ">
+            <label for="category" class="form__input__label">Category</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
-        <div class="form__input__container login__input__container">
-          <input type="text" id="product-name" class="crud__input form__input--text" required placeholder=" ">
-          <label for="product-name" class="form__input__label">Product name</label>
+        <div>
+          <div class="form__input__container login__input__container">
+            <input type="text" id="product-name" class="crud__input form__input--text" required placeholder=" ">
+            <label for="product-name" class="form__input__label">Product name</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
-        <div class="form__input__container login__input__container">
-          <input type="number" id="price" class="crud__input form__input--text" required placeholder=" ">
-          <label for="price" class="form__input__label">Price</label>
+        <div>
+          <div class="form__input__container login__input__container">
+            <input type="number" id="price" class="crud__input form__input--text" required placeholder=" ">
+            <label for="price" class="form__input__label">Price</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
-        <div class="form__input__container login__input__container">
-          <textarea name="description" id="description" class="crud__input form__input--text" rows="10" required placeholder=" "></textarea>
-          <label for="description" class="form__input__label">Description</label>
+        <div>
+          <div class="form__input__container login__input__container">
+            <textarea name="description" id="description" class="crud__input form__input--text" rows="10" required placeholder=" "></textarea>
+            <label for="description" class="form__input__label">Description</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
         <input type="submit" id="add-edit-product__buton" class="blue-button form__button--login" value="Add">
       </form>
@@ -68,15 +84,21 @@
           <il><a class="info__link" href="#">Advertise here</a></il>
         </ul>
       </div>
-      <form class="general__form">
+      <form id="contact-us__form" class="general__form">
         <legend class="contact-us__talk-to-us">Talk to us</legend>
-        <div class="form__input__container">
-          <input type="text" id="name" class="form__input--text" required placeholder=" ">
-          <label class="form__input__label" for="name">Name</label>
+        <div>
+          <div class="form__input__container">
+            <input type="text" id="name" class="form__input--text" required placeholder=" " maxlength="40">
+            <label class="form__input__label" for="name">Name</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
-        <div class="form__input__container">
-          <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" "></textarea>
-          <label class="form__input__label" for="message">Message</label>
+        <div>
+          <div class="form__input__container">
+            <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" " maxlength="300"></textarea>
+            <label class="form__input__label" for="message">Message</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
         <input type="submit" class="blue-button" value="Send message">
       </form>

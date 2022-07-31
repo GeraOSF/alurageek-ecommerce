@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/59cf79b5cf.js" crossorigin="anonymous"></script>
+  <script src="js/form-validation.js" defer></script>
   <title>Alura Geek | Admin menu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -192,15 +193,21 @@
           <il><a class="info__link" href="#">Advertise here</a></il>
         </ul>
       </div>
-      <form class="general__form">
+      <form id="contact-us__form" class="general__form">
         <legend class="contact-us__talk-to-us">Talk to us</legend>
-        <div class="form__input__container">
-          <input type="text" id="name" class="form__input--text" required placeholder=" ">
-          <label class="form__input__label" for="name">Name</label>
+        <div>
+          <div class="form__input__container">
+            <input type="text" id="name" class="form__input--text" required placeholder=" " maxlength="40">
+            <label class="form__input__label" for="name">Name</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
-        <div class="form__input__container">
-          <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" "></textarea>
-          <label class="form__input__label" for="message">Message</label>
+        <div>
+          <div class="form__input__container">
+            <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" " maxlength="300"></textarea>
+            <label class="form__input__label" for="message">Message</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
         <input type="submit" class="blue-button" value="Send message">
       </form>

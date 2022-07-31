@@ -10,6 +10,7 @@
   font-size: 1.7rem;
   font-weight: bold;
   color: var(--color-gray);
+  margin-bottom: 1rem;
 }
 
 .form__button--login {

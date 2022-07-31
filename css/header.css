@@ -45,27 +45,12 @@ header {
   cursor: pointer;
 }
 
-.login__button {
-  width: 12rem;
-  height: 3.5rem;
-  border: solid #2A7AE4 2px;
-  background-color: #fefefe;
-  color: #2A7AE4;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.login__button:hover {
-  background-color: #2A7AE4;
-  color: #fefefe;
-}
-
 @media only screen and (max-width: 375px) {
   .search__container {
     display: none;
   }
 
-  .login__button {
+  .white-button {
     width: fit-content;
   }
 }

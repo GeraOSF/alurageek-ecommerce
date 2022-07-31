@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/59cf79b5cf.js" crossorigin="anonymous"></script>
+  <script src="js/form-validation.js" defer></script>
   <title>Alura Geek | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,14 +28,14 @@
         <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </div>
-    <a href="pages/login.html"><button class="login__button">Log in</button></a>
+    <a href="pages/login.html"><button class="white-button">Log in</button></a>
   </header>
   <main>
     <section class="promo">
       <div class="promo__content">
         <h1 class="promo__text">February Promotions</h1>
         <h3 class="promo__text--details">Consoles are 33% off</h3>
-        <a href="#"><button class="blue-button">View consoles</button></a>
+        <a href="#consoles"><button class="blue-button">View consoles</button></a>
       </div>
     </section>
     <section class="products">
@@ -93,7 +94,7 @@
         </il>
       </ul>
 
-      <div class="product__header">
+      <div class="product__header" id="consoles">
         <h2 class="product__type">Consoles</h2>
         <a href="#" class="view-all">View all <i class="fa-solid fa-arrow-right-long"></i></a>
       </div>
@@ -214,15 +215,21 @@
           <il><a class="info__link" href="#">Advertise here</a></il>
         </ul>
       </div>
-      <form class="general__form">
+      <form id="contact-us__form" class="general__form">
         <legend class="contact-us__talk-to-us">Talk to us</legend>
-        <div class="form__input__container">
-          <input type="text" id="name" class="form__input--text" required placeholder=" ">
-          <label class="form__input__label" for="name">Name</label>
+        <div>
+          <div class="form__input__container">
+            <input type="text" id="name" class="form__input--text" required placeholder=" " maxlength="40" data-type="name">
+            <label class="form__input__label" for="name">Name</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
-        <div class="form__input__container">
-          <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" "></textarea>
-          <label class="form__input__label" for="message">Message</label>
+        <div>
+          <div class="form__input__container">
+            <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" " maxlength="300" data-type="message"></textarea>
+            <label class="form__input__label" for="message">Message</label>
+          </div>
+          <span class="form__error-message"></span>
         </div>
         <input type="submit" class="blue-button" value="Send message">
       </form>
