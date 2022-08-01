@@ -1,11 +1,11 @@
 // Validate contact us form
-const contactForm = document.getElementById("contact-us__form");
 const inputName = document.getElementById("name");
 const inputMessage = document.getElementById("message");
 
 const validityErrors = [
   "valueMissing",
-  "typeMismatch"
+  "typeMismatch",
+  "patternMismatch"
 ];
 const errorMessages = {
   name: {
@@ -13,27 +13,32 @@ const errorMessages = {
   },
   message: {
     valueMissing: "Please fill out your message in this field"
+  },
+  email: {
+    valueMissing: "Please fill out your email in this field",
+    typeMismatch: "Invalid email",
+    patternMismatch: "Invalid email"
+  },
+  password: {
+    valueMissing: "Please fill out your password in this field"
   }
 }
 
-function checkValidity(e) {
-  // Get type of data from "data-" in HTML
-  const dataType = this.dataset.type;
+export default function validateInput(e) {
+  const dataType = this.id; // Get data type from the id name of the element
   const errorMessage = e.composedPath()[2].querySelector(".form__error-message");
   const inputContainer = e.composedPath()[1];
-  let errorFound = false;
-  validityErrors.forEach((validityError) => {
-    if (this.validity[validityError]) {
-      errorMessage.textContent = errorMessages[dataType][validityError];
+  // Check for validity of the input with each of the validity errors
+  for (let i = 0; i < validityErrors.length; i++) {
+    if (this.validity[validityErrors[i]]) {
+      errorMessage.textContent = errorMessages[dataType][validityErrors[i]];
       inputContainer.style.borderColor = "red";
-      errorFound = true;
       return;
     }
-  });
-  if (errorFound) return;
+  }
   errorMessage.textContent = '';
   inputContainer.style.borderColor = "transparent";
 }
 
-inputName.addEventListener("blur", checkValidity);
-inputMessage.addEventListener("blur", checkValidity);
+inputName.addEventListener("blur", validateInput);
+inputMessage.addEventListener("blur", validateInput);

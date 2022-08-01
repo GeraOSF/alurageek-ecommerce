@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/59cf79b5cf.js" crossorigin="anonymous"></script>
-  <script src="js/form-validation.js" defer></script>
+  <script src="js/form-validation.js" type="module" defer></script>
   <title>Alura Geek | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -219,14 +219,14 @@
         <legend class="contact-us__talk-to-us">Talk to us</legend>
         <div>
           <div class="form__input__container">
-            <input type="text" id="name" class="form__input--text" required placeholder=" " maxlength="40" data-type="name">
+            <input type="text" id="name" class="form__input--text" required placeholder=" " maxlength="40">
             <label class="form__input__label" for="name">Name</label>
           </div>
           <span class="form__error-message"></span>
         </div>
         <div>
           <div class="form__input__container">
-            <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" " maxlength="300" data-type="message"></textarea>
+            <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" " maxlength="300"></textarea>
             <label class="form__input__label" for="message">Message</label>
           </div>
           <span class="form__error-message"></span>

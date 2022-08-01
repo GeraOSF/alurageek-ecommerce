@@ -3,5 +3,11 @@
     {
       
     }
+  ],
+  "users": [
+    {
+      "email": "admin@alurageek.com",
+      "password": "password123"
+    }
   ]
 }
