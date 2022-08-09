@@ -5,7 +5,8 @@ const inputMessage = document.getElementById("message");
 const validityErrors = [
   "valueMissing",
   "typeMismatch",
-  "patternMismatch"
+  "patternMismatch",
+  "stepMismatch"
 ];
 const errorMessages = {
   name: {
@@ -21,6 +22,24 @@ const errorMessages = {
   },
   password: {
     valueMissing: "Please fill out your password in this field"
+  },
+  "img-url": {
+    valueMissing: "Please fill out the image URL of the product",
+    typeMismatch: "This is not a valid URL"
+  },
+  category: {
+    valueMissing: "Please fill out the category"
+  },
+  "product-name": {
+    valueMissing: "Please fill out the product name"
+  },
+  price: {
+    valueMissing: "Please indicate the product's base price",
+    typeMismatch: "This is not a valid price, make sure to use numbers only",
+    stepMismatch: "Only up to 2 decimal places are allowed"
+  },
+  description: {
+    valueMissing: "Please add a description to the product"
   }
 }
 
