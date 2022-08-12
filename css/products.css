@@ -39,11 +39,12 @@
   flex-direction: column;
   gap: 0.5rem;
   flex-grow: 1;
+  width: calc(90%/6);
 }
 
 .product__list__element--image {
-  width: 100%;
-  max-width: 315px;
+  min-width: 200px;
+  max-width: 270px;
 }
 
 .product__name, .product__price {
@@ -65,5 +66,23 @@
   }
   .product__list__element--image {
     max-width: 145px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .product__list__element {
+    width: calc(90%/4);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .product__list__element {
+    width: calc(90%/3);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .product__list__element {
+    width: auto;
   }
 }

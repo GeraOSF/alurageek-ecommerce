@@ -1,7 +1,149 @@
 {
   "products": [
     {
-      
+      "name": "Star Wars Storm Trooper Mug",
+      "category": "Star Wars",
+
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/starwars-1.png",
+      "id": "1"
+    },
+    {
+      "name": "Star Wars LEGO Darth Vader",
+      "category": "Star Wars",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/starwars-2.png",
+      "id": "2"
+    },
+    {
+      "name": "Star Wars Yoda Figure",
+      "category": "Star Wars",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/starwars-3.png",
+      "id": "3"
+    },
+    {
+      "name": "Star Wars Trooper Figure",
+      "category": "Star Wars",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/starwars-4.png",
+      "id": "4"
+    },
+    {
+      "name": "Star Wars Baby Yoda Figure",
+      "category": "Star Wars",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/starwars-5.png",
+      "id": "5"
+    },
+    {
+      "name": "Star Wars Kylo Ren Figure",
+      "category": "Star Wars",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/starwars-6.png",
+      "id": "6"
+    },
+    {
+      "name": "Xbox One Controller",
+      "category": "Consoles",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/consoles-1.png",
+      "id": "7"
+    },
+    {
+      "name": "PlayStation 5",
+      "category": "Consoles",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/consoles-2.png",
+      "id": "8"
+    },
+    {
+      "name": "Nintendo Entertainment System",
+      "category": "Consoles",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/consoles-3.png",
+      "id": "9"
+    },
+    {
+      "name": "Nintendo Switch Joycons",
+      "category": "Consoles",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/consoles-4.png",
+      "id": "10"
+    },
+    {
+      "name": "Xbox Series X",
+      "category": "Consoles",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/consoles-5.png",
+      "id": "11"
+    },
+    {
+      "name": "Game Boy Bundle",
+      "category": "Consoles",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/consoles-6.png",
+      "id": "12"
+    },
+    {
+      "name": "Atari T-Shirt",
+      "category": "Others",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/others-1.png",
+      "id": "13"
+    },
+    {
+      "name": "NES T-Shirt",
+      "category": "Others",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/others-2.png",
+      "id": "14"
+    },
+    {
+      "name": "Sonic Figure",
+      "category": "Others",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/others-3.png",
+      "id": "15"
+    },
+    {
+      "name": "Alarm Clock",
+      "category": "Others",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/others-4.png",
+      "id": "16"
+    },
+    {
+      "name": "VR Headset",
+      "category": "Others",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/others-5.png",
+      "id": "17"
+    },
+    {
+      "name": "Pikachu Motley",
+      "category": "Others",
+      "price": "99.99",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum reiciendis, culpa quibusdam qui nulla officia nostrum, labore facilis omnis minima quos, adipisci sed sint architecto cum optio distinctio recusandae.",
+      "image": "assets/others-6.png",
+      "id": "18"
     }
   ],
   "users": [

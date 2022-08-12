@@ -10,9 +10,4 @@ imgInput.addEventListener("change", () => {
     imgDisplay.style.display = "block";
   });
   reader.readAsDataURL(imgInput.files[0]);
-  console.log(reader);
-});
-
-imgURL.addEventListener("blur", () => {
-  console.log(imgURL.value);
 });
