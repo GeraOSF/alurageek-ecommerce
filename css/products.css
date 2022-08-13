@@ -43,7 +43,7 @@
 }
 
 .product__list__element--image {
-  min-width: 200px;
+  min-width: 100px;
   max-width: 270px;
 }
 
