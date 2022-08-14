@@ -1,4 +1,5 @@
 import validateInput from "./form-validation.js";
+import { services } from "./services.js";
 
 const loginForm = document.getElementById("login__form");
 const inputEmail = document.getElementById("email");
@@ -11,8 +12,7 @@ inputPassword.addEventListener("blur", validateInput);
 loginForm.addEventListener("submit", e => {
   e.preventDefault();
   // Fetch users and check if the user is in the database (is an admin)
-  fetch("http://localhost:3000/users")
-    .then(res => res.json())
+  services.getUsers()
     .then(users => {
       for (let i = 0; i < users.length; i++) {
         if (users[i].email == inputEmail.value && users[i].password == inputPassword.value) {
