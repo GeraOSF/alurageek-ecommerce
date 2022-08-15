@@ -1,26 +1,5 @@
 import { services } from "./services.js";
-
-function makeProductHeader(category) {
-  return (
-    `<div class="product__header">
-        <h2 class="product__type">${category}</h2>
-        <a href="#" class="view-all">View all <i class="fa-solid fa-arrow-right-long"></i></a>
-    </div>`
-  );
-}
-
-function makeProductListElement(image, name, price) {
-  return (
-    `<il class="product__list__element">
-      <img src="${image}" alt="Product image" class="product__list__element--image">
-      <p class="product__name">${name}</p>
-      <p class="product__price">$ ${price}</p>
-      <div>
-        <a href="#" class="product__view-product">View product</a>
-      </div>
-    </il>`
-  )
-}
+import { makeElement } from "./make-element.js";
 
 async function renderProducts() {
   const products = await services.getProducts();
@@ -38,8 +17,7 @@ async function renderProducts() {
   const productsSection = document.querySelector(".products");
   categories.forEach(category => {
     // For each category render a header
-    const productHeader = makeProductHeader(category);
-    productsSection.innerHTML += productHeader;
+    productsSection.appendChild(makeElement.productHeader(category));
     // Create product list
     const productList = document.createElement("ul");
     productList.classList.add("product__list");
@@ -47,7 +25,7 @@ async function renderProducts() {
     // Iterate over each product and add it 
     // to the list of the current category
     productsByCategory[category].forEach(product => {
-      productList.innerHTML += makeProductListElement(product.image, product.name, product.price);
+      productList.appendChild(makeElement.productListItem(product.image, product.name, product.price));
     });
   });
 }

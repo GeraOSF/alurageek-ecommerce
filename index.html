@@ -7,6 +7,7 @@
   <script src="https://kit.fontawesome.com/59cf79b5cf.js" crossorigin="anonymous"></script>
   <script src="js/form-validation.js" type="module" defer></script>
   <script src="js/render-index.js" type="module" defer></script>
+  <script src="js/search-product.js" type="module" defer></script>
   <title>Alura Geek | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +16,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/search-results.css">
   <link rel="stylesheet" href="css/promo.css">
   <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/contact-us.css">
@@ -26,12 +28,15 @@
       <img class="logo" src="assets/logo.png" alt="AluraGeek logo">
       <form class="search__container">
         <input type="search" class="search-box" placeholder="Search">
-        <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <!-- <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> -->
       </form>
     </div>
     <a href="pages/login.html"><button class="white-button">Log in</button></a>
   </header>
   <main>
+    <div class="search__results-container">
+      <ul id="search__resuts-list" class="product__list"></ul>
+    </div>
     <section class="promo">
       <div class="promo__content">
         <h1 class="promo__text">February Promotions</h1>
