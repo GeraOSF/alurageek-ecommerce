@@ -2,6 +2,7 @@ import { services } from "./services.js";
 import { makeElement } from "./make-element.js";
 
 async function renderProducts() {
+  return;
   const products = await services.getProducts();
   const productsByCategory = {};
   const categories = [];
@@ -15,6 +16,7 @@ async function renderProducts() {
   });
 
   const productsSection = document.querySelector(".products");
+  productsSection.innerHTML = '';
   categories.forEach(category => {
     // For each category render a header
     productsSection.appendChild(makeElement.productHeader(category));
