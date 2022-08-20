@@ -42,16 +42,18 @@ function goToViewAllPage(e) {
   const header = e.target.parentNode;
   const category = header.querySelector(".product__type").textContent;
   if (typeof onIndex === "undefined") {
-    window.location.href = `../pages/view-all.html?category=${category}`;
+    window.location.href = `view-all.html?category=${category}`;
+    return;
   }
-  window.location.href = `./pages/view-all.html?category=${category}`;
+  window.location.href = `pages/view-all.html?category=${category}`;
 }
 
 function goToViewProductPage(e) {
   const item = e.target.parentNode.parentNode;
   const productName = item.querySelector(".product__name").textContent;
   if (typeof onIndex === "undefined") {
-    window.location.href = `../pages/view-product.html?name=${productName}`;
+    window.location.href = `view-product.html?name=${productName}`;
+    return;
   }
-  window.location.href = `./pages/view-product.html?name=${productName}`;
+  window.location.href = `pages/view-product.html?name=${productName}`;
 }
