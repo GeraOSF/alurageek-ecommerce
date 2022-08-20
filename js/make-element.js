@@ -15,6 +15,8 @@ function productHeader(category) {
 function productListItem(image, name, price) {
   if (window.location.pathname !== "/index.html") {
     image = "../" + image;
+  } else {
+    image = "./" + image;
   }
   const item = document.createElement("li");
   item.classList.add("product__list__element");
