@@ -50,5 +50,8 @@ function goToViewAllPage(e) {
 function goToViewProductPage(e) {
   const item = e.target.parentNode.parentNode;
   const productName = item.querySelector(".product__name").textContent;
-  window.location.href = `../pages/view-product.html?name=${productName}`;
+  if (typeof onIndex === "undefined") {
+    window.location.href = `../pages/view-product.html?name=${productName}`;
+  }
+  window.location.href = `./pages/view-product.html?name=${productName}`;
 }
