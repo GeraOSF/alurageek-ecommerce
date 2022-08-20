@@ -13,11 +13,9 @@ function productHeader(category) {
 }
 
 function productListItem(image, name, price) {
-  console.log(window.location.pathname);
-  if (window.location.pathname !== "alurageek-ecommerce") {
+  if (window.location.pathname !== "/alurageek-ecommerce/") {
     image = "../" + image;
   }
-  console.log(image);
   const item = document.createElement("li");
   item.classList.add("product__list__element");
   item.innerHTML = `<img src="${image}" alt="Product image" class="product__list__element--image">
