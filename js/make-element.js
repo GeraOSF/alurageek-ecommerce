@@ -18,7 +18,7 @@ function productListItem(image, name, price) {
   }
   const item = document.createElement("li");
   item.classList.add("product__list__element");
-  item.innerHTML = `<img src="${image}" alt="Product image" class="product__list__element--image">
+  item.innerHTML = `<img src="./${image}" alt="Product image" class="product__list__element--image">
                     <p class="product__name">${name}</p>
                     <p class="product__price">$ ${price}</p>
                     <div>
