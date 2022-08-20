@@ -15,8 +15,5 @@ main {
   overflow-x: auto;
   gap: 1rem;
   border: 10px solid var(--color-blue);
-  border-radius: 50px;
   border-top: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }

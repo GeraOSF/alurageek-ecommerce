@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/59cf79b5cf.js" crossorigin="anonymous"></script>
   <script src="../js/form-validation.js" type="module" defer></script>
-  <script src="../js/render-viewall.js" type="module" defer></script>
+  <script src="../js/render-view-product.js" type="module" defer></script>
   <script src="../js/search-product.js" type="module" defer></script>
-  <title>Alura Geek | View all</title>
+  <title>Alura Geek | View product</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;700&display=swap" rel="stylesheet">
@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/search-results.css">
   <link rel="stylesheet" href="../css/products.css">
+  <link rel="stylesheet" href="../css/view-product.css">
   <link rel="stylesheet" href="../css/contact-us.css">
   <link rel="stylesheet" href="../css/footer.css">
 </head>
@@ -36,10 +37,14 @@
     <div class="search__results-container">
       <ul id="search__resuts-list" class="product__list"></ul>
     </div>
-    <section class="products">
-      <h2 class="product__type" style="text-align: center; font-size: 2.5rem;">Category</h2>
-      <ul id="category__items" class="product__list"></ul>
+
+    <section class="product__section"></section>
+
+    <section class="similar-products__section">
+      <h1 class="similar-products__title product__type">Similar products</h1>
+      <ul id="similar-products__list" class="product__list"></ul>
     </section>
+    
     <section class="contact-us">
       <div class="logo-info__container">
         <img class="logo-noshadow" src="../assets/logo-noshadow.png" alt="AluraGeek logo">
