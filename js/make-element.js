@@ -13,7 +13,7 @@ function productHeader(category) {
 }
 
 function productListItem(image, name, price) {
-  if (window.location.pathname !== "/alurageek-ecommerce/") {
+  if (typeof onIndex === "undefined") {
     image = "../" + image;
   }
   const item = document.createElement("li");

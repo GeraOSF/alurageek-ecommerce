@@ -4,7 +4,7 @@ const searchResults = document.querySelector(".search__results-container");
 const searchInput = document.querySelector(".search-box");
 
 function makeProductListItem(image, name) {
-  if (window.location.pathname != "index.html") {
+  if (typeof onIndex === "undefined") {
     image = "../" + image;
   }
   const item = document.createElement("li");
