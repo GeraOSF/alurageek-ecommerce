@@ -13,14 +13,13 @@ function productHeader(category) {
 }
 
 function productListItem(image, name, price) {
-  if (window.location.pathname !== "/index.html") {
+  console.log(window.location.pathname);
+  if (window.location.pathname !== "alurageek-ecommerce") {
     image = "../" + image;
-  } else {
-    image = "./" + image;
   }
+  console.log(image);
   const item = document.createElement("li");
   item.classList.add("product__list__element");
-  console.log(image);
   item.innerHTML = `<img src="${image}" alt="Product image" class="product__list__element--image">
                     <p class="product__name">${name}</p>
                     <p class="product__price">$ ${price}</p>
