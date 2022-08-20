@@ -29,7 +29,7 @@ async function renderSimilarProducts() {
   const similarProductsList = document.getElementById("similar-products__list");
   const [productToRender, products] = await getProductInfo();
   products.forEach(({image, name, price, category}) => {
-    if (productToRender.category === category) {
+    if (productToRender.category === category  && productToRender.name !== name) {
       const item = makeElement.productListItem(image, name, price);
       similarProductsList.appendChild(item);
     }
