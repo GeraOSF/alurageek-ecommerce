@@ -2,7 +2,6 @@ import { services } from "./services.js";
 import { makeElement } from "./make-element.js";
 
 async function renderProducts() {
-  return;
   const products = await services.getProducts();
   const productsByCategory = {};
   const categories = [];
