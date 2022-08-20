@@ -41,7 +41,10 @@ export const makeElement = {
 function goToViewAllPage(e) {
   const header = e.target.parentNode;
   const category = header.querySelector(".product__type").textContent;
-  window.location.href = `../pages/view-all.html?category=${category}`;
+  if (typeof onIndex === "undefined") {
+    window.location.href = `../pages/view-all.html?category=${category}`;
+  }
+  window.location.href = `./pages/view-all.html?category=${category}`;
 }
 
 function goToViewProductPage(e) {
